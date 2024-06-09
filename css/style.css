@@ -17,61 +17,153 @@ header{
     z-index: 2000;
 }
 
+header h1{
+    font-size: 1.2rem;
+    align-self: center;
+    padding-left: 10px;
+}
+
 header div{
     grid-column: 2/4;
     display: flex;
-    border: 1px solid brown;
 }
 
 header nav{
     grid-column: 5/11;
     display: flex;
+    justify-self: center;
     justify-content: space-evenly;
-    border: 1px solid blue;
 }
 
 header a{
     text-decoration: none;
     color: black;
     padding: 0px 20px;
+    transition: color 0.2s;
+}
+
+header nav a:hover{
+    color: #5840ba;
+    text-decoration: underline;
 }
 
 header .contact{
     grid-column: 12/14;
     justify-self: center;
-    border: 1px solid yellow;
-    padding: 10px 5px;;
+    padding: 13px 15px;;
     text-align: center;
     width: 100px;
     color: white;
-    background-color: blueviolet;
-    border-radius: 20px;
+    background-color: #5840ba;
+    border-radius: 25px;
+    transition: background-color 0.2s, color 0.2s, border 0.2s;
+}
+
+header .contact:hover{
+    color: #5840ba;
+    background-color: white;
+    border: 1px solid #5840ba;
 }
 
 .hero{
-    position: relative;
+    display: grid;
+    grid-template-rows: repeat(10,1fr);
+    justify-content: unsafe;
     padding-top: 140px;
     height: 100vh;
+    width: 100%;
     text-align: center;
 }
 
-.hero h1{
-    font-size: 3.5rem;
+.hero article{
+    grid-row: 1;
+    align-self: center;
 }
 
-.hero img{
-    position: absolute;
-    left: 35%;
-    bottom: 0;
-    height: 425px;
+.hero p{
+    font-size: 1.3rem;
+}
+
+.hero article i{
+    color: #5840ba;
+}
+
+.hero h1{
+    grid-row: 2;
+    font-size: 4.2rem;
+    justify-self: end;
+}
+
+.hero .imagen{
+    grid-row: 2/10;
+    
+
+    background: url(../img/pruebaHero.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(7,1fr);
+    justify-content: center;
+    align-items: center;
 }
 
 .botones-hero{
-    position: relative;
+    grid-row: 6/8;
     display: flex;
-    justify-content: center;
-    top: 17rem;
-    background-color: white;
-    width: 10rem;    
+    justify-content: space-between;
+    background-color: white;  
+    border-radius: 30px;
 }
 
+.hero a{
+    align-content: center;
+    text-decoration: none;
+    border: solid black 1.5px;
+    color: black;
+    width: 8rem;
+    border-radius: 25px;
+    padding: 10px 10px;
+    margin: 5px;
+    font-size: 1.2rem;
+    transition: color 0.2s, background-color 0.2s;
+}
+
+.hero .aqui-btn:hover{
+    color: white;
+    background-color: black;
+}
+
+.hero .portfolio-btn{
+    width: 8rem;
+    border-radius: 25px;
+    padding: 10px 10px;
+    margin: 5px;
+    font-size: 1.2rem;
+    align-content: center;
+    color: white;
+    background-color: #5840ba;
+}
+
+.fa-arrow-right{
+    background-color: #a4db74;
+    color: black;
+    border-radius: 50%;
+    padding: 5px;
+    margin-left: 15px;
+}
+
+.clientes{
+    position: absolute;
+    width: 100px;
+}
+
+.pie-hero{
+    grid-row: 10;
+    display: flex;
+    background-color: #a4db74;
+    width: 100%;
+    height: 100%;
+}
