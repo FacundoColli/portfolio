@@ -55,6 +55,7 @@ header .contact-btn{
     width: 100px;
     color: white;
     background-color: #5840ba;
+    border: 1px solid #5840ba;
     border-radius: 25px;
     transition: background-color 0.2s, color 0.2s, border 0.2s;
 }
@@ -62,7 +63,6 @@ header .contact-btn{
 header .contact-btn:hover{
     color: #5840ba;
     background-color: white;
-    border: 1px solid #5840ba;
 }
 
 .hero{
@@ -170,43 +170,101 @@ header .contact-btn:hover{
 
 .services{
     height: 100vh;
-    width: 90%;
+    width: 86%;
     background-color: #5840ba;
     display: grid;
     grid-template-rows: repeat(10,1fr);
-    padding: 5%;
+    padding: 7%;
+}
+
+.services .titulo{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 30px;
+}
+
+.services p{
+    color: white;
+    font-size: 1.2rem;
+}
+
+.services p i{
+    margin-right: 10px;
+    color: #a4db74;
+    font-size: 1rem;
+}
+
+.services h1{
+    color: white;
+    font-size: 2.5rem;
 }
 
 .services article{
     grid-row: 1/3;
     display: flex;
     justify-content: space-between;
-}
-
-.services .boton{
+    align-items: center;
 }
 
 .services section{
     grid-row: 3/10;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .services section p{
     color: white;
     margin: 15px 35px;
+    transition: color 0.2s;
 }
 
 .services section h3{
     color: white;
     font-size: 2rem;
     margin-top: 15px;
+    transition: color 0.2s;
 }
 
 .services a{
     text-decoration: none;
     color: #A89CDB;
     margin: 10px 0;
+}
+
+.services article .boton{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;  
+    border-radius: 30px;
+}
+
+.services article .fa-arrow-right{
+    background-color: #5840ba;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    align-self: center;
+    font-size: 1.5rem;
+}
+
+.services article .boton a{
+    align-content: center;
+    text-decoration: none;
+    text-align: center;
+    color: #5840ba;
+    background-color: #a4db74;
+    width: 8rem;
+    border-radius: 30px;
+    padding: 10px 25px;
+    margin: 0;
+    margin-left: 10px;
+    font-size: 1.2rem;
+    transition: color 0.2s;
+}
+
+.services article .boton a:hover{
+    color: white;
 }
 
 .services section div{
@@ -218,6 +276,21 @@ header .contact-btn:hover{
     flex-direction: column;
     justify-content: center;
     align-content: center;
+    transition: background-color 0.2s;
+}
+
+.services section div:hover{
+    background-color: white;
+}
+
+.services section div:hover > .icon{
+    color: #5840ba;
+    background-color: #EFEDF9;
+}
+
+.services section div:hover > h3,
+.services section div:hover > p{
+    color: black;
 }
 
 .services section div .icon{
@@ -228,6 +301,7 @@ header .contact-btn:hover{
     border-radius: 50%;
     background-color: #7E6BCA;
     font-size: 4rem;
+    transition: color 0.2s, background-color 0.2s;
 }
 
 .services section .fa-arrow-right{
