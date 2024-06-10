@@ -110,7 +110,7 @@ header .contact-btn:hover{
     align-items: center;
 }
 
-.botones-hero{
+.hero .botones-hero{
     grid-row: 6/8;
     display: flex;
     justify-content: space-between;
@@ -147,7 +147,7 @@ header .contact-btn:hover{
     background-color: #5840ba;
 }
 
-.fa-arrow-right{
+.hero .fa-arrow-right{
     background-color: #a4db74;
     color: black;
     border-radius: 50%;
@@ -155,12 +155,12 @@ header .contact-btn:hover{
     margin-left: 15px;
 }
 
-.clientes{
+.hero .clientes{
     position: absolute;
     width: 100px;
 }
 
-.pie-hero{
+.hero .pie-hero{
     grid-row: 10;
     display: flex;
     background-color: #a4db74;
@@ -313,13 +313,14 @@ header .contact-btn:hover{
     height: 70vh;
     width: 80%;
     padding: 10%;
+    padding-bottom: 15%;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
 .aboutme .experiencia{
     background-color: #5840ba;
-    border-radius: 20px;
+    border-radius: 15px;
     margin: 0 10%;
     display: flex;
     justify-content: space-between;
@@ -331,6 +332,7 @@ header .contact-btn:hover{
     font-size: 3.5rem;
     text-align: center;
     transform: rotate(180deg);
+    line-height: 75%;
 }
 
 .aboutme .experiencia div{
@@ -411,8 +413,136 @@ header .contact-btn:hover{
 }
 
 .proyects{
-    height: 100vh;
+    width: 86%;
     background-color: #5840ba;
+    display: grid;
+    grid-template-rows: repeat(10,1fr);
+    padding: 7%;
+}
+
+.proyects .titulo{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 30px;
+}
+
+.proyects p{
+    color: white;
+    font-size: 1.2rem;
+}
+
+.proyects p i{
+    margin-right: 10px;
+    color: #a4db74;
+    font-size: 1rem;
+}
+
+.proyects h1{
+    color: white;
+    font-size: 2.5rem;
+}
+
+.proyects article{
+    grid-row: 1/3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.proyects .boton{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;  
+    border-radius: 30px;
+}
+
+.proyects .fa-arrow-right{
+    background-color: #5840ba;
+    color: white;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 5px;
+    align-self: center;
+    font-size: 1.5rem;
+}
+
+.proyects .boton a{
+    align-content: center;
+    text-decoration: none;
+    text-align: center;
+    color: #5840ba;
+    background-color: #a4db74;
+    width: 8rem;
+    border-radius: 30px;
+    padding: 10px 25px;
+    margin: 0;
+    margin-left: 10px;
+    font-size: 1.2rem;
+    transition: color 0.2s;
+}
+
+.proyects a:hover{
+    color: white;
+}
+
+.proyects section{
+    grid-row: 3/10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.proyects section article img{
+    width: 50%;
+    border-radius: 20px;
+}
+
+.proyects section article{
+    background-color: #705BC4;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    transition: background-color 0.2s;
+    padding: 15px;
+    margin: 15px 0;
+}
+
+.proyects section article div{
+    padding-left: 30px;
+    display: flex;
+    row-gap: 30px;
+    column-gap: 10px;
+    flex-wrap: wrap;
+}
+
+.proyects section article div a{
+    text-decoration: none;
+    background-color: #a4db74;
+    border-radius: 30px;
+    text-align: center;
+    padding: 7px 0;
+    width: 25%;
+    transition: color 0.2s;
+}
+
+.proyects section article div h3{
+    color: white;
+    font-size: 2rem;
+
+}
+
+.proyects section article div p{
+    margin-right: 70px;
+}
+
+.proyects section article div .boton{
+    grid-row: 4;
+}
+
+.proyects section article .boton{
+    padding: 0;
 }
 
 .contact{
