@@ -402,6 +402,10 @@ header .contact-btn:hover{
     transition: color 0.2s;
 }
 
+.aboutme .texto .boton a:hover{
+    color: white;
+}
+
 .aboutme .texto .fa-arrow-right{
     background-color: white;
     color: black;
@@ -551,7 +555,8 @@ header .contact-btn:hover{
     height: 100vh;
     display: flex;
     justify-content: center;
-    padding: 0 7%;
+    padding: 7%;
+    width: 86%;
 }
 
 .barra{
@@ -563,12 +568,147 @@ header .contact-btn:hover{
     font-size: 1.5rem;
 }
 
-.contact article{
+.contact .datos{
     width: 50%;
     color: white;
     display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.contact .datos h2{
+    font-size: 1.2rem;
+}
+
+.contact .datos h1{
+    font-size: 2.5rem;
+    align-items: start;
+}
+
+.contact .datos p{
+    margin-right: 30%;
+}
+
+.contact .fa-minus{
+    color: #a4db74;
+    font-size: 1rem;
+    margin-right: 10px;
+}
+
+.contact .datos div{
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    justify-content: start;
+    gap: 20px;
+}
+
+.contact .datos div i{
+    grid-column: 1/2;
+    font-size: 1.2rem;
+    color: #5840ba;
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px;
+    text-align: center;
+}
+
+.contact .datos div p{
+    align-self: center;
+    grid-column: 2/10;
+    width: 100%;
 }
 
 .contact form{
     width: 50%;
+    display: grid;
+    grid-template-rows: repeat(7,1fr);
+    grid-template-columns: 1fr, 1fr;
+    gap: 15px;
+}
+
+.contact form input{
+    border: none;
+    border-radius: 15px;
+    background-color: #705BC4;
+    justify-content: center; 
+    color: white;
+    font-size: 1.2rem;
+    padding: 0 10%;
+}
+
+.contact form input::placeholder{
+    color: #B0A4DF;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    font-size: 1.2rem;
+
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input:focus {
+    outline: none; 
+    box-shadow: 0 0 5px white; /* Agregar una sombra */
+  }
+
+.contact form article{
+    grid-row: 1/3;
+    grid-column: 1/3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.contact form .asunto{
+    grid-row: 3/4;
+    grid-column: 1/3;
+    padding: 5%;
+}
+
+.contact form .mensaje{
+    grid-row: 4/7;
+    grid-column: 1/3;
+    padding: 5%
+}
+
+.contact form .boton{
+    grid-row: 7;
+    align-self: center;
+    justify-self: start;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;  
+    border-radius: 30px;
+}
+
+ .contact form .boton a{ 
+    align-content: center;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    background-color: #a4db74;
+    border-radius: 30px;
+    padding: 10px 25px;
+    margin: 0;
+    margin-left: 10px;
+    font-size: 1rem;
+    transition: color 0.2s;
+}
+
+.contact form .boton a:hover{
+    color: white;
+}
+
+.contact form .fa-arrow-right{
+    background-color: #5840ba;
+    color: white;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 5px;
+    align-self: center;
+    font-size: 1rem;
 }
