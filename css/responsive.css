@@ -1,0 +1,82 @@
+@media(max-width:320px){}
+@media(max-width:480px){
+    header{
+        padding: 10px;
+        height: auto;
+        display: flex;
+        justify-content: left;
+        gap: 50px;
+    }
+    .hero h1{
+        font-size: 2rem;
+    }
+    .services{
+        height: auto;
+        grid-template-rows: repeat(6,1fr);
+    }
+    .services .titulo{
+        padding: 0;
+    }
+    .services section{
+        grid-row: 3/6;
+    }
+}
+@media(max-width:780px){
+    header nav{
+        display: none;
+    }
+    header .contact-btn{
+        grid-column: 13;
+    }
+    .hero .imagen{
+        background: none;
+        display: flex;
+    }
+    .services section h3{
+        font-size: 150%;
+    }
+    .proyects section article img{
+        display: none;
+    }
+    .contact{
+        height: auto;
+        flex-direction: column;
+        align-content: center;
+    }
+    .contact .datos{
+        width: 100%;
+        margin: 50px 0;
+    }
+    .contact form{
+        width: 100%;
+    }
+    footer .contenedor{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    footer .navegacion{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    footer .contacto{
+        flex-direction: row;
+    }
+    footer .info{
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+    }
+}
+@media(max-width:1024px){
+    .proyects section article div a{
+        width: 30%;
+    }
+    footer form{
+        position: relative;
+        left: -70px;
+    }
+}
+@media(max-width:1280px){}
+@media(max-width:1440px){}
+@media(max-width:1920px){}
