@@ -29,6 +29,10 @@ Instrucciones de uso
 -Ejecutar el servidor de desarrollo local.
 -Abrir el navegador web y acceder a la dirección URL correspondiente.
 
+Deploy
+
+
+https://facundocolli.github.io/portfolio/
 Contacto
 
 Para cualquier consulta o sugerencia, no dude en contactarse a través de facucolli@gmail.com
